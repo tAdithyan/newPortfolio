@@ -1,8 +1,155 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700");
+
+
 body {
-  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+
+}
+   .navbar {
+            background-color:transparent;
+            backdrop-filter: blur(5px);
+            width: auto !important;
+        }
+
+        .navbar .nav-link {
+            color: white;
+        }
+
+        .navbar .nav-link:hover {
+            color: #ddd;
+        }
+
+        /* Section */
+        .section {
+            padding: 60px 0;
+        }
+
+        .h-100vh {
+            height: 100vh;
+        }
+
+        .home-bg {
+            background: url('assets/images/modern-2.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .header_title {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .fw-bold {
+            font-weight: bold;
+        }
+
+        .social_home {
+            margin-top: 20px;
+        }
+
+        .social_home .list-inline-item {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .header_btn {
+            margin-top: 30px;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .scroll_down {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+        }
+
+        .about_head {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* Skills Section */
+        #mySkills {
+            padding: 60px 0;
+        }
+
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cards {
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header_title {
+                font-size: 1.5rem;
+            }
+
+            .social_home {
+                margin-top: 10px;
+            }
+
+            .header_btn {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header_title {
+                font-size: 1.2rem;
+            }
+
+            .skill {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+nav{
+  overflow: hidden !important;
+  width: auto;
+  background-color: #337ab7;
 }
 
 h1,
@@ -362,13 +509,14 @@ button:focus {
 
 .custom-nav {
   padding: 15px 0px;
-  width: 100%;
+  width: auto;
   border-radius: 0px;
   z-index: 999;
   margin-bottom: 0px;
   transition: all 0.5s ease-in-out;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  /* background-color: transparent;
+  backdrop-filter: blur(10px); */
+  /* background-color: red; */
 }
 .custom-nav.stickyadd {
   background-color: #fff;
@@ -505,17 +653,10 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.projects{
-  background-color: red;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
+
 .cards{
   height: 100px;
   width: 100px;
-  border: 1px solid red;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -531,6 +672,8 @@ button:focus {
   .custom-nav {
     margin-top: 0px;
     padding: 10px 0px !important;
+    overflow-x: hidden;
+    width: 100%;
     background-color: transparent !important;
   }
   .custom-nav .logo {
@@ -538,7 +681,7 @@ button:focus {
   }
   .custom-nav .navbar-nav li a {
     margin: 0 0px;
-    padding: 6px 0;
+    padding: 5px 0;
     color: white!important;
   }
   .custom-nav .navbar-nav li a:before {
@@ -549,7 +692,7 @@ button:focus {
     color: white !important;
   }
   .custom-nav > .container {
-    width: 90%;
+    width: 100%;
   }
   .custom-nav .logo .logo-dark {
     display: inline-block;
@@ -568,6 +711,7 @@ button:focus {
     margin-top: 0px;
     margin-bottom: 0px;
     color: white;
+    margin-right: 1rem;
   }
   .header_title {
     font-size: 30px;
@@ -656,7 +800,6 @@ button:focus {
   .cards{
     height: 100px;
     width: 100px;
-    border: 1px solid red;
     justify-content: center;
     display: flex;
     align-items: center;

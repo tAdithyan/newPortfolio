@@ -1,169 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+       
 
-  </head>
+        /* Navbar */
+        .navbar {
+            background-color:transparent;
+            backdrop-filter: blur(5px);
+            width: auto !important;
+        }
 
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-      <div class="container">
-        <a class="navbar-brand logo" href="index_1.html">
-          <h1>Who am I...?</h1>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <i class="mdi mdi-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#myWorks" class="nav-link">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Achievements</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
+        .navbar .nav-link {
+            color: white;
+        }
+
+        .navbar .nav-link:hover {
+            color: #ddd;
+        }
+
+        /* Section */
+        .section {
+            padding: 60px 0;
+        }
+
+        .h-100vh {
+            height: 100vh;
+        }
+
+        .home-bg {
+            background: url('assets/images/modern-2.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .header_title {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .fw-bold {
+            font-weight: bold;
+        }
+
+        .social_home {
+            margin-top: 20px;
+        }
+
+        .social_home .list-inline-item {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .header_btn {
+            margin-top: 30px;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .scroll_down {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+        }
+
+        .about_head {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* Skills Section */
+        #mySkills {
+            padding: 60px 0;
+        }
+
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cards {
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header_title {
+                font-size: 1.5rem;
+            }
+
+            .social_home {
+                margin-top: 10px;
+            }
+
+            .header_btn {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header_title {
+                font-size: 1.2rem;
+            }
+
+            .skill {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar  fixed-top custom-nav sticky">
+        <div class="container">
+            <a class="navbar-brand logo" href="index_1.html">
+                <h1>Who am I...?</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mySkills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <section class="home-bg section h-100vh" id="home">
-      <div class="bg-overlay"></div>
-      <div class="container z-index">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-white text-center">
-              <h4>Hello... Welcome To My Website</h4>
-              <h1 class="header_title mb-0 mt-3">
-                I Am
-                <span
-                  class="element fw-bold"
-                  data-elements="ADITHYAN,A  SoftWareDeveloper"
-                ></span>
-              </h1>
-              <ul class="social_home list-unstyled text-center pt-4">
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)"
-                    ><i class="mdi mdi-facebook"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)"
-                    ><i class="mdi mdi-linkedin"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)"
-                    ><i class="mdi mdi-dribbble"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)"
-                    ><i class="mdi mdi-google-plus"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)"
-                    ><i class="mdi mdi-twitter"></i
-                  ></a>
-                </li>
-              </ul>
-              <div class="header_btn">
-                <a
-                  href="javascript:void(0)"
-                  class="btn btn-outline-custom btn-rounded mt-4"
-                  >Download CV</a
-                >
-              </div>
+        <div class="bg-overlay"></div>
+        <div class="container z-index">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-white text-center">
+                        <h4>Hello... Welcome To My Website</h4>
+                        <h1 class="header_title mb-0 mt-3">
+                            I Am
+                            <span class="element fw-bold" data-elements="ADITHYAN, A SoftWare Developer"></span>
+                        </h1>
+                        <ul class="social_home list-unstyled text-center pt-4">
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="mdi mdi-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                        </ul>
+                        <div class="header_btn">
+                            <a href="javascript:void(0)" class="btn btn-outline-custom btn-rounded mt-4">Download CV</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="scroll_down">
-        <a href="#about" class="scroll">
-          <i class="mbri-arrow-down text-white"></i>
-        </a>
-      </div>
+        <div class="scroll_down">
+            <a href="#about" class="scroll">
+                <i class="mbri-arrow-down text-white"></i>
+            </a>
+        </div>
     </section>
-    <section id="about">
-      <h1 class="about_head hidden">Who am I...?</h1>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque
-        accusantium aliquid beatae adipisci officia est dolore ipsum. Vitae,
-        dolor ipsa. Veniam, in. Quia, optio! Corrupti tempora iusto dolore
-        numquam.
-      </p>
+    <section id="about">
+        <h1 class="about_head hidden">Who am I...?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque accusantium aliquid beatae adipisci officia est dolore ipsum. Vitae, dolor ipsa. Veniam, in. Quia, optio! Corrupti tempora iusto dolore numquam.</p>
     </section>
+
     <section id="mySkills">
-      <h1>My Skills</h1>
-      <div  class="skill">
-        <div class="cards" style="overflow: hidden">
-          <img src="/assets/images/js.png" alt="" width="100px" />
+        <h1>My Skills</h1>
+        <div class="skill">
+            <div class="cards" style="overflow: hidden">
+                <img src="assets/images/js.png" alt="JavaScript" width="100px">
+            </div>
+            <div class="cards">
+                <img src="assets/images/react.png" alt="React" width="300rem">
+            </div>
+            <div class="cards">
+                <img src="assets/images/node.png" alt="Node.js" width="80rem">
+            </div>
+            <div class="cards">
+                <img src="assets/images/python.png" alt="Python" width="80rem">
+            </div>
+            <div class="cards">
+                <img src="assets/images/django-icon-removebg-preview.png" alt="Django" width="80rem">
+            </div>
         </div>
-        <div class="cards">
-          <img src="/assets/images/react.png" alt="" width="300rem" />
-        </div>
-        <div class="cards">
-            <img src="/assets/images/node.png" alt="" width="80rem" />
-          </div>
-          <div class="cards">
-            <img src="/assets/images/python.png" alt="" width="80rem" />
-          </div>
-          <div class="cards">
-            <img src="/assets/images/django-icon-removebg-preview.png" alt="" width="80rem" />
-          </div>
-        
-      </div>
-      
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/typed.js"></script>
-    <script
-      src="https://kit.fontawesome.com/4d8456b076.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/4d8456b076.js" crossorigin="anonymous"></script>
     <script>
-      $(".element").each(function () {
-        var $this = $(this);
-        $this.typed({
-          strings: $this.attr("data-elements").split(","),
-          typeSpeed: 100,
-          backDelay: 3000
+        $(".element").each(function() {
+            var $this = $(this);
+            $this.typed({
+                strings: $this.attr("data-elements").split(","),
+                typeSpeed: 100,
+                backDelay: 3000
+            });
         });
-      });
     </script>
-  </body>
+</body>
 </html>

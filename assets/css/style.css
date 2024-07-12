@@ -481,7 +481,7 @@ button:focus {
   
 }
 
-#myWorks{
+#mySkills{
   background-color: black;
   height: 100vh ;
   color: #ffffff;
@@ -498,6 +498,12 @@ button:focus {
       background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.skill{
+  gap: 2rem;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .projects{
   background-color: red;
@@ -521,25 +527,26 @@ button:focus {
 
 
 @media (max-width: 768px) {
+ 
   .custom-nav {
     margin-top: 0px;
     padding: 10px 0px !important;
-    background-color: #fff !important;
+    background-color: transparent !important;
   }
   .custom-nav .logo {
-    color: #000;
+    color: white;
   }
   .custom-nav .navbar-nav li a {
     margin: 0 0px;
     padding: 6px 0;
-    color: rgba(0, 0, 0, 0.55) !important;
+    color: white!important;
   }
   .custom-nav .navbar-nav li a:before {
     content: "";
     display: none;
   }
   .custom-nav .navbar-nav li.active a {
-    color: #000 !important;
+    color: white !important;
   }
   .custom-nav > .container {
     width: 90%;
@@ -560,10 +567,10 @@ button:focus {
     font-size: 29px;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: #000;
+    color: white;
   }
   .header_title {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.2;
   }
   .header_subtitle {
@@ -617,6 +624,46 @@ button:focus {
   }
   .blog_detail p.blockquote {
     font-size: 14px !important;
+  }
+  #about{
+    background-color: black;
+    height: 50vh ;
+    text-align: center;
+    
+    
+  }
+  #mySkills{
+    background-color: black;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.9)
+      ), 
+      url('/assets/images/blmbg_f_nanc.gif');
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .skill{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+  .cards{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size:8rem;
+  }
+  .cards:hover{
+    background-color: #000;
   }
 }
 @media (max-width: 576px) {

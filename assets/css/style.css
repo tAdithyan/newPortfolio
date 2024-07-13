@@ -625,19 +625,7 @@ button:focus {
   font-size: 1.8rem;
 }
 
-#about {
-  background-color: black;
-  min-height: 100vh;
-  max-height: auto;
-  color: #ffffff;
 
-  background: linear-gradient(45deg, #000000, #1c1d1e, #1A2130);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-
-
-}
 
 #mySkills {
   height: 100vh;
@@ -842,6 +830,20 @@ button:focus {
 .contact-info .social-icons a:hover {
   color: #555;
 }
+#about {
+  background-color: black;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: auto;
+  color: #ffffff;
+
+  background: linear-gradient(45deg, #000000, #1c1d1e, #1A2130);
+  display: grid;
+  grid-template-columns: 1fr ;
+
+
+
+}
 
 .about_img {
   /* overflow: hidden; */
@@ -851,8 +853,8 @@ button:focus {
 
 }
 .about_img  img{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 .about_details{
   border: 1px solid white;
@@ -860,7 +862,7 @@ button:focus {
     align-items: center;
      display: flex;
       flex-direction:column; 
-      margin: 5rem;
+      margin: 2rem;
        border-radius: 2rem;
        font-size: 1.5rem;
 }

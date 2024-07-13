@@ -704,7 +704,9 @@ button:focus {
   transition: transform 0.3s ease;
   text-align: center;
 }
-
+.projectItem  a{
+  color: white;
+}
 .projectItem button {
   border-radius: 2rem;
   background-color: transparent;

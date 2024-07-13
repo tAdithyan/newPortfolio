@@ -1072,6 +1072,9 @@ button:focus {
        border-radius: 2rem;
        font-size: 1rem;
 }
+.about_details h1{
+  margin: 2rem;
+}
 }
 
 @media (max-width: 576px) {

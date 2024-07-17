@@ -1038,8 +1038,8 @@ button:focus {
     align-items: center;
   }
   .about_img img{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   .about_details{
   border: 1px solid white;
@@ -1054,6 +1054,7 @@ button:focus {
 .about_details h1{
   margin: 2rem;
 }
+
 }
 
 @media (max-width: 576px) {
@@ -1063,6 +1064,10 @@ button:focus {
 
   .home-bg {
     padding: 146px 0;
+  }
+  .about_img{
+    height: 150px;
+    width: 150px;
   }
 }
 
